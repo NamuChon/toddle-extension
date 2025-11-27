@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Toddle Extension",
+  "version": "1.0",
+  "description": "A tool that allows students to create personal deadlines on the Toddle homepage",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://web.toddleapp.com/platform/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "128": "icon128.png"
+  }
+}
